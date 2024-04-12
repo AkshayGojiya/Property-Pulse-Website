@@ -1,0 +1,114 @@
+.agent {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agentmain {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.agentupper {
+    padding-top: 50px;
+    display: inline-block;
+    text-align: center;
+    align-items: center ;
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3;
+    height: 37px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.agentlineone {
+    margin-left: 44%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 3px;
+    width: 12%;
+    background-color: #29524a;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+  
+.agentlinetwo {
+    margin-left: 47%;
+    height: 3px;
+    width: 6%;
+    background-color: #29524a;
+    margin-top: 8px;
+    border-radius: 20px;
+}
+
+.agentlover {
+    width: 100%;
+    height: 358px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+  
+.agentloverin {
+    height: 70%;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px;
+}
+  
+.agentloverinimg {
+    display: flex;
+    width: 100%;
+    height: 66%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+  
+.agentloverinimg img {
+    height: 85%;
+    width: auto;
+}
+  
+.agentloverintext1 {
+    padding-top: 1.5%;
+    display: flex;
+    width: 100%;
+    height: 17%;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.agentloverintext2 {
+    display: flex;
+    width: 100%;
+    height: 17%;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.agentloverin:hover img {
+    transform: scale(1.1);
+    transition: all 250ms ease-in-out 0s;
+}
+
+.agentloverin:not(:hover) img {
+    transform: scale(1);
+    transition: all 250ms ease-in-out 0s;
+}
