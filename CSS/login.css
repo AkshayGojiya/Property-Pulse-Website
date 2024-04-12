@@ -1,0 +1,155 @@
+body {
+    /* background-color: #e4e0df; */
+    background-image: url('john-fornander-Id7u0EkTjBE-unsplash.jpg');
+   
+}
+ 
+ .login-page {
+     width: 660px;
+     height: 100%;
+     padding: 6% 0 0;
+     margin: auto;
+     font-family: 'Helvetica Neue';
+ }
+.s2{
+    text-align: left;
+    align-items: left;
+    place-items: center;
+    width: 100%;
+}
+
+ .form-check-inline{
+    float: left;
+    clear: none;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+    margin-top: 25px;
+    display: flex;
+  }
+  
+  input[type=radio],
+  input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+    margin-top: 5px;
+  }
+
+ .form {
+    /* background-image: url(Simple.png);
+    background-size: cover; */
+     position: relative;
+     z-index: 1;
+     background: #fdfffc;
+     max-width: 360px;
+     margin: 0 auto 100px;
+     padding: 45px;
+     padding-top: 30px;
+     text-align: center;
+     /* box-shadow: 0 0 30px 0 #171818, 0 8px  8px 0 #1a1a1a; */
+     border: 2px solid #29524a;
+     /* display: flex; */
+ }
+ 
+ .form input {
+     font-family: sans-serif;
+     outline: 0;
+     background: #f2f2f2;
+     width: 100%;
+     border: 0;
+     margin: 0 0 15px;
+     padding: 15px;
+     box-sizing: border-box;
+     font-size: 14px;
+     border-radius: 2rem;
+     margin-right: 5px;
+ }
+ 
+ .form button {
+     font-family: "Roboto", sans-serif;
+     text-transform: uppercase;
+     outline: 0;
+     background: #29524a;
+     width: 100%;
+     border: 3px solid rgba(255, 255, 255, 0.333);
+     padding: 15px;
+     color: #FFFFFF;
+     font-size: 14px;
+     -webkit-transition: all 0.3 ease;
+     transition: all 0.3 ease;
+     cursor: pointer;
+     border-radius: 2rem;
+ }
+ 
+ .s1{
+     text-transform: uppercase;
+     outline: 0;
+     background: #eef1f0;
+     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#29524a;
+    text-decoration:none ;
+    width: 100%;
+    padding: 11px;
+    margin:2px;
+    border-radius: 2rem;
+    font-size: 14px;
+    border: 2px solid rgba(61, 60, 60, 0.753);
+ }
+ .form button:hover {
+     background: #2a675a;
+ }
+ 
+ .form .message {
+     margin: 15px 0 0;
+     color: #b3b3b3;
+     font-size: 10px;
+ }
+ 
+ .form .message a {
+     color: #4CAF50;
+     text-decoration: none;
+ }
+ 
+ .form .register-form {
+     display: none;
+ }
+ .s2 input {
+    /* padding-top: 10px; */
+    margin-top: 20px;
+    
+ }
+ .form {
+    border-radius: 0.4rem;
+}
+
+h3 .form-check-inline-in{
+    margin-bottom: 2rem;
+}
+
+.form-check-inline-in {
+    margin-bottom: 2rem;
+}
+
+.form-check-inline-in-1 {
+    margin-bottom: 2rem;
+    width: 27%;
+    display: inline;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
