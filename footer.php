@@ -52,7 +52,7 @@
                             <div class="linetwo"></div>
                             <ul class="footerlistone" >
                                 <li id="footerlistoneitem" class="lowerfooteran"><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;Birla Vishvakarma Mahavidhyalaya</li>
-                                <li id="footerlistoneitem" class="lowerfooteran"><i class="fa-solid fa-phone"></i>&nbsp;+91 9510 469 749</li>
+                                <li id="footerlistoneitem" class="lowerfooteran"><i class="fa-solid fa-phone"></i>&nbsp;+91 951 046 9749</li>
                                 <li id="footerlistoneitem" class="lowerfooteran"><i class="fa-solid fa-envelope"></i>&nbsp;aksgojiya@gmail.com</li>
                             </ul>
                             <div class="footersocial">

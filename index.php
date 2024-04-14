@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Pulse | Let Us Guide You Home</title>
     <link rel="icon" type="image/x-icon" href="Images/android-chrome-512x512.png"> 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -74,12 +76,168 @@
                     </div>
                     <div class="homelineone"></div>
                     <div class="homelinetwo"></div>
+                    <div class="home3in2">
+                        <div class="home3in2in1">
+                            <div class="home3in2in1img">
+                                <div class="home3in2in1imgup"></div>
+                                <div class="home3in2in1imgdown">
+                                    &#8377;39339
+                                    <p id="home3imagepara" >1423 sqft</p>
+                                </div>
+                            </div>
+                            <div class="home3in2in1text">
+                                <div class="home3in2in1text1">
+                                    Zills Home
+                                    <p id="home3downpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
+                                </div>
+                                <div class="home3in2in1text2">
+                                    <div class="home3down2in1">
+                                        <p>1221</p>
+                                        <p id="home3inininpara" >Sqft</p>
+                                    </div>
+                                    <div class="home3down2in2">
+                                        <p>4</p>
+                                        <p id="home3inininpara" >Beds</p>
+                                    </div>
+                                    <div class="home3down2in3">
+                                        <p>2</p>
+                                        <p id="home3inininpara" >Baths</p>
+                                    </div>
+                                    <div class="home3down2in4">
+                                        <p>1</p>
+                                        <p id="home3inininpara" >Kitchen</p>
+                                    </div>
+                                    <div class="home3down2in5">
+                                        <p>1</p>
+                                        <p id="home3inininpara" >Balcony</p>
+                                    </div>
+                                </div>
+                                <div class="home3in2in1text3">
+                                    <div class="home3loverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
+                                    <div class="home3loverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home3in2in1">
+                            <div class="home3in2in1img">
+                                <div class="home3in2in1imgup"></div>
+                                <div class="home3in2in1imgdown">
+                                    &#8377;39339
+                                    <p id="home3imagepara" >1423 sqft</p>
+                                </div>
+                            </div>
+                            <div class="home3in2in1text">
+                                <div class="home3in2in1text1">
+                                    Zills Home
+                                    <p id="home3downpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
+                                </div>
+                                <div class="home3in2in1text2">
+                                    <div class="home3down2in1">
+                                        <p>1221</p>
+                                        <p id="home3inininpara" >Sqft</p>
+                                    </div>
+                                    <div class="home3down2in2">
+                                        <p>4</p>
+                                        <p id="home3inininpara" >Beds</p>
+                                    </div>
+                                    <div class="home3down2in3">
+                                        <p>2</p>
+                                        <p id="home3inininpara" >Baths</p>
+                                    </div>
+                                    <div class="home3down2in4">
+                                        <p>1</p>
+                                        <p id="home3inininpara" >Kitchen</p>
+                                    </div>
+                                    <div class="home3down2in5">
+                                        <p>1</p>
+                                        <p id="home3inininpara" >Balcony</p>
+                                    </div>
+                                </div>
+                                <div class="home3in2in1text3">
+                                    <div class="home3loverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
+                                    <div class="home3loverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home3in2in1">
+                            <div class="home3in2in1img">
+                                <div class="home3in2in1imgup"></div>
+                                <div class="home3in2in1imgdown">
+                                    &#8377;39339
+                                    <p id="home3imagepara" >1423 sqft</p>
+                                </div>
+                            </div>
+                            <div class="home3in2in1text">
+                                <div class="home3in2in1text1">
+                                    Zills Home
+                                    <p id="home3downpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
+                                </div>
+                                <div class="home3in2in1text2">
+                                    <div class="home3down2in1">
+                                        <p>1221</p>
+                                        <p id="home3inininpara" >Sqft</p>
+                                    </div>
+                                    <div class="home3down2in2">
+                                        <p>4</p>
+                                        <p id="home3inininpara" >Beds</p>
+                                    </div>
+                                    <div class="home3down2in3">
+                                        <p>2</p>
+                                        <p id="home3inininpara" >Baths</p>
+                                    </div>
+                                    <div class="home3down2in4">
+                                        <p>1</p>
+                                        <p id="home3inininpara" >Kitchen</p>
+                                    </div>
+                                    <div class="home3down2in5">
+                                        <p>1</p>
+                                        <p id="home3inininpara" >Balcony</p>
+                                    </div>
+                                </div>
+                                <div class="home3in2in1text3">
+                                    <div class="home3loverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
+                                    <div class="home3loverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="homemain4">
                 <div class="homemain4in">
-
+                    <div class="home4inin">
+                        <div class="home4inner1">
+                            <h3>Why Choose Us</h3>
+                        </div>
+                        <div class="home4inner2">
+                            <div class="home4innerin1">
+                                <img src="Images/badge.png" alt="Top Rated">
+                            </div>
+                            <div class="home4innerin2">
+                                <h5>Top Rated</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="home4inner3">
+                            <div class="home4innerin1">
+                                <img src="Images/home-security.png" alt="Experience Quality">
+                            </div>
+                            <div class="home4innerin2">
+                                <h5>Experience Quality</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="home4inner4">
+                            <div class="home4innerin1">
+                                <img src="Images/agent-2.png" alt="Experienced Agents" id="agent-2">
+                            </div>
+                            <div class="home4innerin2">
+                                <h5>Experienced Agents</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -116,6 +274,13 @@
                 </div>
             </div>
         </div>
+        <a href="#">
+            <span class="backtotop" id="scroller" >
+                <span class="material-symbols-outlined">
+                    arrow_upward
+                </span>
+            </span>
+        </a>
     </section>
     <footer>
         <?php require("footer.php"); ?>

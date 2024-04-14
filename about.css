@@ -79,11 +79,13 @@
     object-fit: cover;
     transform: scale(1);
     transition: all ease-in-out 0.2s;
+    filter: grayscale(50%);
 }
 
 #aboutimg:hover {
     transform: scale(1.02);
     transition: all ease-in-out 0.2s;
+    filter: grayscale(0%);
 }
 
 .imgdiv {

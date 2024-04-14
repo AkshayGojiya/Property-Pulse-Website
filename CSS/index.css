@@ -4,6 +4,40 @@
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: #29524a;
+  color: #e4e0df;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+  transition: 0.3s ease-out;
+}
+
+.scrollerdisplay {
+  display: none;
+}
+
+.backtotop:hover {
+  background-color: black;
+  transition: 0.3s ease-out;
+}
+
+.backtotop:hover span {
+  transform: translateY(-2px);
+  transition: 0.3s ease-out;
+}
+
 .homemain1 {
   height: 520px;
   width: 100%;
@@ -13,9 +47,16 @@
   justify-content: center;
   align-items: center;
   /* background-color: #29524a; */
-  background-image: url(Images/index-2.jpg);
+  background-image: url(index-2.jpg);
   background-size: cover;
   background-position: center;
+  filter: grayscale(15%);
+  transition: all ease-in-out 0.3s;
+}
+
+.homemain1:hover {
+  filter: grayscale(0%);
+  transition: all ease-in-out 0.3s;
 }
 
 .home1in1 {
@@ -188,7 +229,7 @@
 }
 
 .homemain3 {
-  height: 700px;
+  height: 750px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -196,7 +237,7 @@
 }
 
 .homemain3in {
-  height: 100%;
+  height: 95%;
   width: 70%;
   text-align: center;
 }
@@ -215,20 +256,298 @@
   font-size: 32px;
 }
 
+.home3in2 {
+  margin-top: 1.5%;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home3in2in1 {
+  height: 95%;
+  width: 29%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+.home3in2in1:hover .home3in2in1img {
+  transform: scale(1.03);
+  transition: all 250ms ease-in-out 0s;
+}
+
+.home3in2in1:not(:hover) .home3in2in1img {
+  transform: scale(1);
+  transition: all 250ms ease-in-out 0s;
+}
+
+.home3in2in1img {
+  height: 48%;
+  width: 100%;
+  background-image: url(house.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home3in2in1imgup {
+  height: 40%;
+  width: 100%;
+}
+
+.home3in2in1imgdown {
+  height: 30%;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+  padding-left: 20px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.4;
+  text-align: left;
+}
+
+#home3imagepara {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.home3in2in1text {
+  height: 52%;
+  width: 100%;
+}
+
+.home3in2in1text1 {
+  height: 33.3333%;
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+  padding-left: 17px;
+  line-height: 2;
+  text-align: left;
+}
+
+#home3downpara1 {
+  font-size: 16px;
+  font-weight:lighter;
+}
+
+.home3in2in1text2 {
+  height: 33.3333%;
+  width: 100%;
+  background-color: #e4e0df;
+  padding-left: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.home3down2in1 {
+  height: 70%;
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left; 
+}
+
+#home3inininpara {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.home3down2in1,.home3down2in2,.home3down2in3,.home3down2in4,.home3down2in5 p {
+  padding-left: 10px;
+}
+
+.home3down2in2 {
+  height: 70%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left; 
+  /* background-color: #29524a; */
+}
+
+.home3down2in3 {
+  height: 70%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left; 
+  /* background-color: #29524a; */
+}
+
+.home3down2in4 {
+  height: 70%;
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left; 
+  /* background-color: #29524a; */
+}
+
+.home3down2in5 {
+  height: 70%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left; 
+  /* background-color: #29524a; */
+}
+
+.home3in2in1text3 {
+  height: 33.3333%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home3loverlover1 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.home3loverlover2 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
 .homemain4 {
   height: 500px;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: yellowgreen;
+  background-image: url(index-2.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .homemain4in {
   height: 100%;
-  width: 70%;
-  text-align: center;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: flex-end;
 }
+
+.home4inin {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  gap: 2%;
+}
+
+.home4inner1 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  font-size: 28px;
+  color: white;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.home4inner2 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  font-size: 28px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home4inner3 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  font-size: 28px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home4inner4 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  font-size: 28px;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home4innerin1 {
+  height: 85%;
+  width: 20%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home4inin img {
+  height: 65%;
+  width: auto;
+}
+
+#agent-2 {
+  height: 80%;
+  width: auto;
+}
+
+.home4innerin2 {
+  height: 85%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*if i want to add paragraph then i need to change this to space evenly*/
+}
+
+.home4innerin2 h5 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  /* this is for if i want to add any text in the paragraph so i can remove this padding  */
+  padding-left: 20px;
+}
+
 
 .homemain5 {
   height: 500px;
