@@ -1,7 +1,8 @@
 body {
     /* background-color: burlywood; */
     /* background-image: url('john-fornander-Id7u0EkTjBE-unsplash.jpg'); */
-   
+    position: relative;
+    z-index: -30;
 }
  
  .login-page {
@@ -10,6 +11,8 @@ body {
      padding: 6% 0 0;
      margin: auto;
      font-family: 'Helvetica Neue';
+     position: relative;
+     z-index: -30;
  }
 .s2{
     text-align: left;

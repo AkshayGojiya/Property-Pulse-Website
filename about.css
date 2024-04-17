@@ -79,7 +79,9 @@
     object-fit: cover;
     transform: scale(1);
     transition: all ease-in-out 0.2s;
-    filter: grayscale(50%);
+    box-sizing: border-box;
+    z-index: -1;
+    filter: grayscale(30%);
 }
 
 #aboutimg:hover {

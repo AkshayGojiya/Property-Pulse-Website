@@ -19,7 +19,7 @@
                 <!-- <img src="Images/index-2.jpg" alt="index image"> -->
                 <div class="home1in1">
                     Let Us <br>
-                    Guide You Home
+                    <h3 id="home1in1para">Guide You Home</h3>
                 </div>
                 <div class="home1in2">
                     <form action="">
@@ -241,7 +241,7 @@
                 </div>
             </div>
 
-            <div class="homemain5">
+            <!-- <div class="homemain5">
                 <div class="homemain5in">
                     <div class="home5in1">
                         How It Work
@@ -249,12 +249,8 @@
                     <div class="homelineone"></div>
                     <div class="homelinetwo"></div>
                 </div>
-            </div>
-            <div class="homemain6">
-                <div class="homemain6in">
+            </div> -->
 
-                </div>
-            </div>
             <div class="homemain7">
                 <div class="homemain7in">
                     <div class="home7in1">
@@ -262,8 +258,57 @@
                     </div>
                     <div class="homelineone"></div>
                     <div class="homelinetwo"></div>
+                    <div class="home7inin">
+                        <div class="home7innerimg">
+                            <h3 id="home7innertext1">Mumbai</h3>
+                            <h5>0 Properties Listed</h5>
+                        </div>
+                        <div class="home7innerimg">
+                            <h3 id="home7innertext1">Mumbai</h3>
+                            <h5>0 Properties Listed</h5>
+                        </div>
+                        <div class="home7innerimg">
+                            <h3 id="home7innertext1">Mumbai</h3>
+                            <h5>0 Properties Listed</h5>
+                        </div>
+                        <div class="home7innerimg">
+                            <h3 id="home7innertext1">Mumbai</h3>
+                            <h5>0 Properties Listed</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+            <div class="homemain6">
+                <div class="homemain6in">
+                    <div class="home6inner">
+                        <img src="Images/home-security.png" alt="property">
+                        <h4>32</h4>
+                        <h5>Property Available</h5>
+                    </div>
+                    <div class="home6inner">
+                        <img src="Images/home-security.png" alt="property">
+                        <h4>12</h4>
+                        <h5>Sale Property Available</h5>
+                    </div>
+                    <div class="home6inner">
+                        <img src="Images/home-security.png" alt="property">
+                        <h4>20</h4>
+                        <h5>Rent Property Available</h5>
+                    </div>
+                    <div class="home6inner">
+                        <img src="Images/home-security.png" alt="property">
+                        <h4>10</h4>
+                        <h5>Registered Users</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
             <div class="homemain8">
                 <div class="homemain8in">
                     <div class="home8in1"> 

@@ -75,11 +75,15 @@
     object-fit: cover;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: -20;
 }
   
 .agentloverinimg img {
     height: 85%;
     width: auto;
+    z-index: -2;
 }
   
 .agentloverintext1 {

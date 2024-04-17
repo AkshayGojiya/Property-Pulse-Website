@@ -37,6 +37,8 @@
     display: flex;
     justify-content: center;
     background-color: white;
+    position: relative;
+     z-index: 20;
 }
 
 .nav {
@@ -58,6 +60,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: white;
+    overflow: hidden;
 }
 
 #navlogo {
@@ -66,6 +69,7 @@ a {
     object-fit: cover;
     transition: all ease-in-out 0.2s;
     transform: scale(1);
+    overflow: hidden;
 }
 
 .navitem {
@@ -95,7 +99,8 @@ a {
     object-fit: cover;
     border-radius: 20px;
     border: 1px solid white;
-    font-size: 14px;
+    font-size: 78%;
+    padding: 2%;
     font-weight: bold;
     background-color: #29524a;
     color: white;
@@ -134,4 +139,5 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
+    transition: all 0.2s ease-in 2s;
 }
