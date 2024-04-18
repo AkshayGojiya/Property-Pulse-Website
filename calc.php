@@ -13,11 +13,14 @@
     </header>
     <section>
         <?php 
-            if($_SERVER('REQUEST_METHOD' == 'POST')){
-                $price = $_POST['propprice'];
-                $duration = $_POST['propduration'];
-                $interestrate = $_POST['propinterest'];
-                $amount = $price * $duration * $interest / 100;
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                $propprice=$_REQUEST['propprice'];
+                $propduration=$_REQUEST['propduration'];
+                $propint=$_REQUEST['propinterest'];
+                
+                $interest = $propprice * $propint/100;
+                $pay = $propprice + $interest;
+                $month = $pay / $propduration;
             }
         ?>
         <section>
@@ -38,27 +41,27 @@
                             </tr>
                             <tr>
                                 <td>Amount</td>
-                                <td>&#8377;<?php echo $price ?></td>
+                                <td>&#8377;<?php echo $propprice ?></td>
                             </tr>
                             <tr>
                                 <td>Total Duration</td>
-                                <td><?php echo $duration ?> Months</td>
+                                <td><?php echo $propduration ?> Months</td>
                             </tr>
                             <tr>
                                 <td>Interest Rate</td>
-                                <td><?php echo $interestrate ?>%</td>
+                                <td><?php echo $propint ?>%</td>
                             </tr>
                             <tr>
                                 <td>Total Interest</td>
-                                <td>&#8377;12</td>
+                                <td>&#8377;<?php echo $interest ?></td>
                             </tr>
                             <tr>
                                 <td>Total Amount</td>
-                                <td>&#8377;12</td>
+                                <td>&#8377;<?php echo $pay ?></td>
                             </tr>
                             <tr>
                                 <td>Pay per Month (EMI)</td>
-                                <td>&#8377;12</td>
+                                <td>&#8377;<?php echo $month ?></td>
                             </tr>
                         </table>
                     </div>

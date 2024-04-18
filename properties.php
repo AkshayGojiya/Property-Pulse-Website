@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="propforminput">
                                     <i class="fa-solid fa-calendar-days"></i>
-                                    <input type="text" name="propduration" id="propduration" placeholder="Duration Year">
+                                    <input type="text" name="propduration" id="propduration" placeholder="Duration Months">
                                 </div>
                                 <div class="propforminput">
                                     <i class="fa-solid fa-percent"></i>
@@ -136,13 +136,6 @@
                             </div>
                             <div class="proplineonefor2"></div>
                             <div class="proplinetwofor2"></div>
-                            <div class="propfeaturedpropinner">
-                                <img src="Images/login.jpeg" alt="prop">
-                                <div class="propfeaturedinnertext">
-                                    Zills Home
-                                <p id="propfeaturedinnerpara" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
-                                </div>                              
-                            </div>
                             <div class="propfeaturedpropinner">
                                 <img src="Images/login.jpeg" alt="prop">
                                 <div class="propfeaturedinnertext">

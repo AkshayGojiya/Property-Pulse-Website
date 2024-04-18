@@ -124,6 +124,7 @@ html {
   background-color: #29524a;
   color: white;
   margin: 0 0 0 36px;
+  cursor: pointer;
 }
 
 .home1in2 button:hover {
@@ -455,7 +456,7 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url(index-2.jpg);
+  background-image: url(home4back.jpg);
   background-position: center;
   background-size: cover;
 }
