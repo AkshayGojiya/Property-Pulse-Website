@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Property Pulse | Let Us Guide You Home</title>
-     <link rel="stylesheet" type="text/css" href="CSS/login.css">
+     <link rel="stylesheet" type="text/css" href="login.css">
      <link rel="icon" type="image/x-icon" href="Images/android-chrome-512x512.png">
 </head>
 <body>
@@ -43,14 +43,14 @@
                    </div> 
                 </div>
                   <br>
-              <div class="s2">
-                Upload Any One Id Proof :
-                (Aadhar Card/Driving License/Voter Id)
-                  <input type="file"> 
-              </div>
-                <br><button type="submit">Register</button><br><br>
-                <p>Already Have An Account? <br><br>
-                <a class="s1" href="login.php"> Login </a></p>
+                <div class="s2">
+                  Upload Any One Id Proof :
+                  (Aadhar Card/Driving License/Voter Id)
+                    <input type="file"> 
+                </div>
+                    <br><button type="submit">Register</button><br><br>
+                    <p>Already Have An Account? <br><br>
+                    <a class="s1" href="login.php"> Login </a></p>
             </form>
         </div>
     </div>

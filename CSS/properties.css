@@ -17,10 +17,13 @@
 }
 
 .propmain1 {
+    margin-top: 2%;
     width: 66.6666667%;
     height: 100%;
-    display: flex;
-    gap: 3%;
+    display: grid;
+    column-gap: 3%;
+    row-gap: 3%;
+    grid-template-columns: auto auto;
 }
 
 .propmain2 {
@@ -30,7 +33,7 @@
 
 .propin2in1 {
     height: 40vh;
-    width: 47%;
+    width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 1%;
     overflow: hidden;
@@ -46,7 +49,7 @@
   .propin2in1img {
     height: 55%;
     width: 100%;
-    background-image: url(house.jpg);
+    background-image: url(CSS/house.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -173,12 +176,12 @@
   }
 
   .propformforinstalment input {
-    width: 85%;
+    width: 80%;
     font-size: 15px;
-    border-radius: 6px;
+    border-radius: 0 6px 6px 0;
     padding: 12px;
     margin: 2%;
-    margin-left: 5%;
+    margin-left: 0;
     margin-right: 5%;
     border: 2px solid #e4e0df;
   }
@@ -195,6 +198,7 @@
     margin-top: 4%;
     margin-left: 5%;
     transition: all ease-in-out 0.6s;
+    cursor: pointer;
   }
 
   .propformforinstalment button:hover {
@@ -210,6 +214,7 @@
 }
 
   .propfeaturedpropinner {
+    margin-bottom: 1%;
     width: 90%;
     height: 40%;
     margin: 2%;
@@ -240,4 +245,29 @@
   #propfeaturedinnerpara {
     font-size: 16px;
     font-weight:lighter;
+  }
+
+  .proprecentlyaddedprop {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .propforminput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .propforminput i {
+    width: 3%;
+    font-size: 15px;
+    border-radius: 6px 0 0 6px;
+    padding: 12px;
+    padding-left: 15px;
+    margin: 2%;
+    margin-left: 5%;
+    margin-right: 0;
+    border: 3px solid #e4e0df;
+    background-color: #e4e0df;
   }
