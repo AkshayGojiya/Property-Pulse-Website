@@ -1,3 +1,10 @@
+<?php 
+ini_set('session.cache_limiter','public');
+session_cache_limiter(false);
+session_start();
+include("config.php");								
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,25 +22,27 @@
         <section>
             <div class="aboutmain">
                 <div class="aboutmainin">
+                <?php 
+					
+					$query=mysqli_query($con,"SELECT * FROM about");
+					while($row=mysqli_fetch_array($query))
+					{
+				?>
                     <div class="aboutupper">
-                        <div id="aboutuppertext">About Us</div>
+                        <div id="aboutuppertext"><?php echo $row['1'];?></div>
                         <div class="aboutlineone"></div>
                         <div class="aboutlinetwo"></div>
                     </div>
                     <div class="aboutlower">
                         <div class="aboutlowerone">
-                            <p id="aboutlowerpara" style="line-height: 1.76;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum vero unde nam iste aliquam blanditiis excepturi quo facere ex molestias, error dolorum adipisci exercitationem repellendus illum esse odio enim.
-                            <p id="aboutlowerpara" style="line-height: 1.76;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum vero unde nam iste aliquam blanditiis excepturi quo facere ex molestias, error dolorum adipisci exercitationem repellendus illum esse odio enim.
-                            tempora atque asperiores deleniti quibusdam laudantium eaque ad autem laboriosam mollitia? Nesciunt hic, repudiandae sed officiis autem corporis voluptatum tempore dolore ea aperiam iusto vel obcaecati alias fugiat voluptas!
-                            At quidem tempore sint non, eligendi officiis debitis autem qui ab nobis optio quasi impedit consequuntur pariatur blanditiis? Veniam doloremque natus ex rem atque ad praesentium voluptatum at deleniti repudiandae.
-                            Eveniet rem corporis ipsum dolorem obcaecati, voluptate natus, quae ut facere dolorum, alias assumenda iure quod impedit. Velit laudantium perferendis, nam distinctio vero repudiandae exercitationem maiores consequuntur. Dolorem, consequatur exercitationem!</p>
-                            <p id="aboutlowerpara" style="line-height: 1.76;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum vero unde nam iste aliquam blanditiis excepturi quo facere ex molestias, error dolorum adipisci exercitationem Eveniet rem corporis ipsum dolorem obcaecati, voluptate natus, quae ut facere dolorum, alias assumenda iure quod impedit. Velit laudantium perferendis, nam distinctio vero repudiandae exercitationem maiores consequuntur. Dolorem, consequatur exercitationem!</p>
+                            <?php echo $row['2'];?>
                         </div>
                         <div class="aboutlowertwo">
-                            <div class="imgdiv"><img src="Images/webaliser-_TPTXZd9mOo-unsplash.jpg" alt="about image" id="aboutimg" ></div>
+                            <div class="imgdiv"><img src="<?php echo $row['3'];?>" alt="about image" id="aboutimg" ></div>
                         </div>
                     </div>
                 </div>
+                <?php } ?>
             </div>
         </section>
     </section>

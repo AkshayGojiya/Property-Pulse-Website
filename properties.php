@@ -1,10 +1,17 @@
+<?php 
+ini_set('session.cache_limiter','public');
+session_cache_limiter(false);
+session_start();
+include("config.php");								
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Pulse | Let Us Guide You Home</title>
-    <link rel="stylesheet" type="text/css" href="CSS/properties.css">
+    <link rel="stylesheet" type="text/css" href="properties.css">
     <link rel="icon" type="image/x-icon" href="Images/android-chrome-512x512.png">
 </head>
 <body>
@@ -15,82 +22,31 @@
         <div class="prop">
             <div class="propmain">
                 <div class="propmain1">
+                <?php 
+                    $query=mysqli_query($con,"SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid");
+                        while($row=mysqli_fetch_array($query))
+                        {
+                    ?>
                     <div class="propin2in1">
                         <div class="propin2in1img">
                             <div class="propin2in1imgup"></div>
                             <div class="propin2in1imgdown">
-                                &#8377;39339
-                                <p id="propimagepara" >1423 sqft</p>
+                                &#8377;<?php echo $row['13'];?>
+                                <p id="propimagepara" ><?php echo $row['12'];?> sqft</p>
                             </div>
                         </div>
                         <div class="propin2in1text">
                             <div class="propin2in1text1">
-                                Zills Home
-                                <p id="propdownpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
+                                <?php echo $row['1'];?>
+                                <p id="propdownpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;<?php echo $row['14'];?></p>
                             </div>
                             <div class="propin2in1text3">
-                                <div class="proploverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
-                                <div class="proploverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
+                                <div class="proploverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : <?php echo $row['uname'];?></div>
+                                <div class="proploverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;<?php echo date('d-m-Y', strtotime($row['date']));?></div>
                             </div>
                         </div>
                     </div>
-                    <div class="propin2in1">
-                            <div class="propin2in1img">
-                                <div class="propin2in1imgup"></div>
-                                <div class="propin2in1imgdown">
-                                    &#8377;39339
-                                    <p id="propimagepara" >1423 sqft</p>
-                                </div>
-                            </div>
-                            <div class="propin2in1text">
-                                <div class="propin2in1text1">
-                                    Zills Home
-                                    <p id="propdownpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
-                                </div>
-                                <div class="propin2in1text3">
-                                    <div class="proploverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
-                                    <div class="proploverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propin2in1">
-                            <div class="propin2in1img">
-                                <div class="propin2in1imgup"></div>
-                                <div class="propin2in1imgdown">
-                                    &#8377;39339
-                                    <p id="propimagepara" >1423 sqft</p>
-                                </div>
-                            </div>
-                            <div class="propin2in1text">
-                                <div class="propin2in1text1">
-                                    Zills Home
-                                    <p id="propdownpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
-                                </div>
-                                <div class="propin2in1text3">
-                                    <div class="proploverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
-                                    <div class="proploverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="propin2in1">
-                            <div class="propin2in1img">
-                                <div class="propin2in1imgup"></div>
-                                <div class="propin2in1imgdown">
-                                    &#8377;39339
-                                    <p id="propimagepara" >1423 sqft</p>
-                                </div>
-                            </div>
-                            <div class="propin2in1text">
-                                <div class="propin2in1text1">
-                                    Zills Home
-                                    <p id="propdownpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
-                                </div>
-                                <div class="propin2in1text3">
-                                    <div class="proploverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
-                                    <div class="proploverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
-                                </div>
-                            </div>
-                        </div>
+                    <?php } ?>
                 </div>
                 <div class="propmain2">
                     <div class="propmain2insecond1">
@@ -122,13 +78,19 @@
                             </div>
                             <div class="proplineonefor2"></div>
                             <div class="proplinetwofor2"></div>
+                            <?php 
+                                    $query=mysqli_query($con,"SELECT * FROM `property` WHERE isFeatured = 1 ORDER BY date DESC LIMIT 3");
+                                    while($row=mysqli_fetch_array($query))
+                                    {
+                            ?>
                             <div class="propfeaturedpropinner">
                                 <img src="Images/login.jpeg" alt="prop">
                                 <div class="propfeaturedinnertext">
-                                    Zills Home
-                                <p id="propfeaturedinnerpara" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
+                                    <?php echo $row['1'];?>
+                                <p id="propfeaturedinnerpara" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;<?php echo $row['14'];?></p>
                                 </div>                              
                             </div>
+                            <?php } ?>
                         </div>
                         <div class="proprecentlyaddedprop">
                             <div class="propsecondin1"> 
@@ -136,13 +98,19 @@
                             </div>
                             <div class="proplineonefor2"></div>
                             <div class="proplinetwofor2"></div>
+                            <?php 
+								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 6");
+                                    while($row=mysqli_fetch_array($query))
+                                    {
+								?>
                             <div class="propfeaturedpropinner">
                                 <img src="Images/login.jpeg" alt="prop">
                                 <div class="propfeaturedinnertext">
-                                    Zills Home
-                                <p id="propfeaturedinnerpara" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
+                                    <?php echo $row['1'];?>
+                                <p id="propfeaturedinnerpara" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;<?php echo $row['14'];?></p>
                                 </div>                              
                             </div>
+                            <?php } ?>
                         </div>
                     </div>
                     

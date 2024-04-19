@@ -1,3 +1,11 @@
+<?php 
+ini_set('session.cache_limiter','public');
+session_cache_limiter(false);
+session_start();
+include("config.php");
+								
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +24,6 @@
     <section>
         <div class="homemain">
             <div class="homemain1">
-                <!-- <img src="Images/index-2.jpg" alt="index image"> -->
                 <div class="home1in1">
                     Let Us <br>
                     <h3 id="home1in1para">Guide You Home</h3>
@@ -77,129 +84,52 @@
                     <div class="homelineone"></div>
                     <div class="homelinetwo"></div>
                     <div class="home3in2">
+                    <?php $query=mysqli_query($con,"SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid ORDER BY date DESC LIMIT 9");
+                        while($row=mysqli_fetch_array($query))
+                        {
+                    ?>
                         <div class="home3in2in1">
                             <div class="home3in2in1img">
                                 <div class="home3in2in1imgup"></div>
                                 <div class="home3in2in1imgdown">
-                                    &#8377;39339
-                                    <p id="home3imagepara" >1423 sqft</p>
+                                    &#8377;<?php echo $row['13'];?>
+                                    <p id="home3imagepara" ><?php echo $row['12'];?> sqft</p>
                                 </div>
                             </div>
                             <div class="home3in2in1text">
                                 <div class="home3in2in1text1">
-                                    Zills Home
-                                    <p id="home3downpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
+                                    <?php echo $row['1'];?>
+                                    <p id="home3downpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;<?php echo $row['14'];?></p>
                                 </div>
                                 <div class="home3in2in1text2">
                                     <div class="home3down2in1">
-                                        <p>1221</p>
+                                        <p><?php echo $row['12'];?></p>
                                         <p id="home3inininpara" >Sqft</p>
                                     </div>
                                     <div class="home3down2in2">
-                                        <p>4</p>
+                                        <p><?php echo $row['6'];?></p>
                                         <p id="home3inininpara" >Beds</p>
                                     </div>
                                     <div class="home3down2in3">
-                                        <p>2</p>
+                                        <p><?php echo $row['7'];?></p>
                                         <p id="home3inininpara" >Baths</p>
                                     </div>
                                     <div class="home3down2in4">
-                                        <p>1</p>
+                                        <p><?php echo $row['9'];?></p>
                                         <p id="home3inininpara" >Kitchen</p>
                                     </div>
                                     <div class="home3down2in5">
-                                        <p>1</p>
+                                        <p><?php echo $row['8'];?></p>
                                         <p id="home3inininpara" >Balcony</p>
                                     </div>
                                 </div>
                                 <div class="home3in2in1text3">
-                                    <div class="home3loverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
-                                    <div class="home3loverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
+                                    <div class="home3loverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : <?php echo $row['uname'];?></div>
+                                    <div class="home3loverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;<?php echo date('d-m-Y', strtotime($row['date']));?></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="home3in2in1">
-                            <div class="home3in2in1img">
-                                <div class="home3in2in1imgup"></div>
-                                <div class="home3in2in1imgdown">
-                                    &#8377;39339
-                                    <p id="home3imagepara" >1423 sqft</p>
-                                </div>
-                            </div>
-                            <div class="home3in2in1text">
-                                <div class="home3in2in1text1">
-                                    Zills Home
-                                    <p id="home3downpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
-                                </div>
-                                <div class="home3in2in1text2">
-                                    <div class="home3down2in1">
-                                        <p>1221</p>
-                                        <p id="home3inininpara" >Sqft</p>
-                                    </div>
-                                    <div class="home3down2in2">
-                                        <p>4</p>
-                                        <p id="home3inininpara" >Beds</p>
-                                    </div>
-                                    <div class="home3down2in3">
-                                        <p>2</p>
-                                        <p id="home3inininpara" >Baths</p>
-                                    </div>
-                                    <div class="home3down2in4">
-                                        <p>1</p>
-                                        <p id="home3inininpara" >Kitchen</p>
-                                    </div>
-                                    <div class="home3down2in5">
-                                        <p>1</p>
-                                        <p id="home3inininpara" >Balcony</p>
-                                    </div>
-                                </div>
-                                <div class="home3in2in1text3">
-                                    <div class="home3loverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
-                                    <div class="home3loverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="home3in2in1">
-                            <div class="home3in2in1img">
-                                <div class="home3in2in1imgup"></div>
-                                <div class="home3in2in1imgdown">
-                                    &#8377;39339
-                                    <p id="home3imagepara" >1423 sqft</p>
-                                </div>
-                            </div>
-                            <div class="home3in2in1text">
-                                <div class="home3in2in1text1">
-                                    Zills Home
-                                    <p id="home3downpara1" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;39 Bailey Drive</p>
-                                </div>
-                                <div class="home3in2in1text2">
-                                    <div class="home3down2in1">
-                                        <p>1221</p>
-                                        <p id="home3inininpara" >Sqft</p>
-                                    </div>
-                                    <div class="home3down2in2">
-                                        <p>4</p>
-                                        <p id="home3inininpara" >Beds</p>
-                                    </div>
-                                    <div class="home3down2in3">
-                                        <p>2</p>
-                                        <p id="home3inininpara" >Baths</p>
-                                    </div>
-                                    <div class="home3down2in4">
-                                        <p>1</p>
-                                        <p id="home3inininpara" >Kitchen</p>
-                                    </div>
-                                    <div class="home3down2in5">
-                                        <p>1</p>
-                                        <p id="home3inininpara" >Balcony</p>
-                                    </div>
-                                </div>
-                                <div class="home3in2in1text3">
-                                    <div class="home3loverlover1"><i class="fa-solid fa-user"></i>&nbsp;By : Thomas Olson</div>
-                                    <div class="home3loverlover2"><i class="fa-solid fa-calendar-days"></i>&nbsp;22-07-2022</div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -259,47 +189,87 @@
                     <div class="homelineone"></div>
                     <div class="homelinetwo"></div>
                     <div class="home7inin">
+                    <?php
+                        $query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Olisphis'");
+                        while($row=mysqli_fetch_array($query))
+                        {
+                            ?>
                         <div class="home7innerimg">
-                            <h3 id="home7innertext1">Mumbai</h3>
-                            <h5>0 Properties Listed</h5>
+                            <a href="stateproperty.php?id=<?php echo $row['17']?>"><h3 id="home7innertext1"><?php echo $row['state'];?></h3></a>
+                            <h5><?php 
+                                        $total = $row[0];
+                                        echo $total;?> Properties Listed</h5>
                         </div>
+                        <?php } ?>
+                        <?php
+                        $query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Floson'");
+                        while($row=mysqli_fetch_array($query))
+                        {
+                            ?>
                         <div class="home7innerimg">
-                            <h3 id="home7innertext1">Mumbai</h3>
-                            <h5>0 Properties Listed</h5>
+                            <a href="stateproperty.php?id=<?php echo $row['17']?>"><h3 id="home7innertext1"><?php echo $row['state'];?></h3></a>
+                            <h5><?php 
+                                        $total = $row[0];
+                                        echo $total;?> Properties Listed</h5>
                         </div>
-                        <div class="home7innerimg">
-                            <h3 id="home7innertext1">Mumbai</h3>
-                            <h5>0 Properties Listed</h5>
-                        </div>
-                        <div class="home7innerimg">
-                            <h3 id="home7innertext1">Mumbai</h3>
-                            <h5>0 Properties Listed</h5>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
 
 
             <div class="homemain6">
+            <?php
+                $query=mysqli_query($con,"SELECT count(pid) FROM property");
+                    while($row=mysqli_fetch_array($query))
+                        {
+                ?>
                 <div class="homemain6in">
                     <div class="home6inner">
                         <img src="Images/home-security.png" alt="property">
-                        <h4>32</h4>
+                        <h4><?php 
+                            $total = $row[0];
+                            echo $total;?></h4>
+                            <?php } ?>
                         <h5>Property Available</h5>
                     </div>
+                    <?php
+                            $query=mysqli_query($con,"SELECT count(pid) FROM property where stype='sale'");
+                                while($row=mysqli_fetch_array($query))
+                                    {
+                            ?>
                     <div class="home6inner">
                         <img src="Images/home-security.png" alt="property">
-                        <h4>12</h4>
+                        <h4><?php 
+                                $total = $row[0];
+                                echo $total;?></h4>
+                                <?php } ?>
                         <h5>Sale Property Available</h5>
                     </div>
+                    <?php
+                            $query=mysqli_query($con,"SELECT count(pid) FROM property where stype='rent'");
+                                while($row=mysqli_fetch_array($query))
+                                    {
+                            ?>
                     <div class="home6inner">
                         <img src="Images/home-security.png" alt="property">
-                        <h4>20</h4>
+                        <h4><?php 
+                                $total = $row[0];
+                                echo $total;?></h4>
+                                <?php } ?>
                         <h5>Rent Property Available</h5>
                     </div>
+                    <?php
+                        $query=mysqli_query($con,"SELECT count(uid) FROM user");
+                            while($row=mysqli_fetch_array($query))
+                                {
+                        ?>
                     <div class="home6inner">
                         <img src="Images/home-security.png" alt="property">
-                        <h4>10</h4>
+                        <h4><?php 
+                            $total = $row[0];
+                            echo $total;?></h4>
+                            <?php } ?>
                         <h5>Registered Users</h5>
                     </div>
                 </div>
@@ -319,8 +289,8 @@
                 </div>
             </div>
         </div>
-        <a href="#">
-            <span class="backtotop" id="scroller" >
+        <a href="#" class="backtotop" id="scroller">
+            <span >
                 <span class="material-symbols-outlined">
                     arrow_upward
                 </span>

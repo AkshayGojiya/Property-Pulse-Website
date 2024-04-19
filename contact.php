@@ -1,10 +1,38 @@
+<?php 
+include("config.php");
+$error="";
+$msg="";
+if(isset($_POST['send']))
+{
+	$name=$_POST['contactformname'];
+	$email=$_POST['contactformemail'];
+	$phone=$_POST['contactformphone'];
+	$subject=$_POST['contactformsubject'];
+	$message=$_POST['contactformcomments'];
+	if(!empty($name) && !empty($email) && !empty($phone) && !empty($subject) && !empty($message))
+	{
+		
+		$sql="INSERT INTO contact (name,email,phone,subject,message) VALUES ('$name','$email','$phone','$subject','$message')";
+		   $result=mysqli_query($con, $sql);
+		   if($result){
+			   $msg = "<p class='alert alert-success'>Message Send Successfully!</p> ";
+		   }
+		   else{
+			   $error = "<p class='alert alert-warning'>Message Not Send Successfully</p> ";
+		   }
+	}else{
+		$error = "<p class='alert alert-warning'>Please Fill all the fields</p>";
+	}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Pulse | Let Us Guide You Home</title>
-    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
     <link rel="icon" type="image/x-icon" href="Images/android-chrome-512x512.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -32,8 +60,9 @@
                         </div>
                         <div class="contactlineone"></div>
                         <div class="contactlinetwo"></div>
+                        <center><?php echo $msg; ?><?php echo $error; ?></center>
                         <div class="contactform">
-                            <form action="">
+                            <form method="post">
                                 <div class="contactformfirstrow">
                                 <input type="text" name="contactformname" id="contactformname" placeholder="Your Name*">
                                 <input type="email" name="contactformemail" id="contactformemail" placeholder="Email Address*">
@@ -46,7 +75,7 @@
                                     <textarea name="contactformcomments" id="contactformcomments" cols="30" rows="10" placeholder="Type Comments..." ></textarea>
                                 </div>
                                 <div class="contactformforthrow">
-                                    <button id="contactformbutton" >Send Message</button>
+                                    <button id="contactformbutton" type="submit" value="send message" name="send">Send Message</button>
                                 </div>
                             </form>
                         </div>
