@@ -24,29 +24,31 @@ include("config.php");
     <section>
         <div class="homemain">
             <div class="homemain1">
-                <div class="home1in1">
-                    Let Us <br>
-                    <h3 id="home1in1para">Guide You Home</h3>
-                </div>
-                <div class="home1in2">
-                    <form action="">
-                        <select name="indexformtype" id="indexformttype">
-                            <option value="Select Type">Select Type</option>
-                            <option value="Apartment">Apartment</option>
-                            <option value="Flat">Flat</option>
-                            <option value="Building">Building</option>
-                            <option value="House">House</option>
-                            <option value="Villa">Villa</option>
-                            <option value="Office">Office</option>
-                        </select>
-                        <select name="indexformstatus" id="indexformtstatus">
-                            <option value="Select Status">Select Status</option>
-                            <option value="Rent">Rent</option>
-                            <option value="Sale">Sale</option>
-                        </select>
-                        <input type="city" name="indexformcity" id="indexformcity" placeholder="Enter City" >
-                        <button>Search Property</button>
-                    </form>
+                <div class="home1in">
+                    <div class="home1in1">
+                        Let Us <br>
+                        <h3 id="home1in1para">Guide You Home</h3>
+                    </div>
+                    <div class="home1in2">
+                        <form method="post" action="propertygrid.php">
+                            <select name="indexformtype" id="indexformttype">
+                                <option value="Select Type">Select Type</option>
+                                <option value="Apartment">Apartment</option>
+                                <option value="Flat">Flat</option>
+                                <option value="Building">Building</option>
+                                <option value="House">House</option>
+                                <option value="Villa">Villa</option>
+                                <option value="Office">Office</option>
+                            </select>
+                            <select name="indexformstatus" id="indexformtstatus">
+                                <option value="Select Status">Select Status</option>
+                                <option value="Rent">Rent</option>
+                                <option value="Sale">Sale</option>
+                            </select>
+                            <input type="city" name="indexformcity" id="indexformcity" placeholder="Enter City" >
+                            <button type="submit" name="filter" value="submit" >Search Property</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="homemain2">

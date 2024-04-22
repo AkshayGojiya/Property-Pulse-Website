@@ -11,7 +11,7 @@ if(isset($_POST['send']))
 	$message=$_POST['contactformcomments'];
 	if(!empty($name) && !empty($email) && !empty($phone) && !empty($subject) && !empty($message))
 	{
-		
+        
 		$sql="INSERT INTO contact (name,email,phone,subject,message) VALUES ('$name','$email','$phone','$subject','$message')";
 		   $result=mysqli_query($con, $sql);
 		   if($result){

@@ -3,6 +3,10 @@ ini_set('session.cache_limiter','public');
 session_cache_limiter(false);
 session_start();
 include("config.php");
+if(!isset($_SESSION['uemail']))
+{
+	header("location:login.php");
+}								
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,23 +22,12 @@ include("config.php");
         <?php require("header.php"); ?>
     </header>
     <section>
-        <?php 
-            if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                $propprice=$_REQUEST['propprice'];
-                $propduration=$_REQUEST['propduration'];
-                $propint=$_REQUEST['propinterest'];
-                
-                $interest = $propprice * $propint/100;
-                $pay = $propprice + $interest;
-                $month = $pay / $propduration;
-            }
-        ?>
         <section>
             <div class="calcmain">
                 <div class="calcmainin">
                     <div class="calcmaininner1">
                         <div class="calcmainininner1up">
-                            EMI Calculator
+                            User Listed Property
                         </div>
                         <div class="calclineone"></div>
                         <div class="calclinetwo"></div>
@@ -42,9 +35,20 @@ include("config.php");
                     <div class="calcmaininner2">
                         <table>
                             <tr>
-                                <th width="65%">Term</th>
-                                <th>Amount</th>
+                                <th width="12%">Properties</th>
+                                <th>BHK</th>
+                                <th>Type</th>
+                                <th>Added Date</th>
+                                <th>Status</th>
+                                <th>Update</th>
+                                <th>Delete</th>
                             </tr>
+                            <?php 
+							$uid=$_SESSION['uid'];
+							$query=mysqli_query($con,"SELECT * FROM `property` WHERE uid='$uid'");
+								while($row=mysqli_fetch_array($query))
+								{
+							?>
                             <tr>
                                 <td>Amount</td>
                                 <td>&#8377;<?php echo $propprice ?></td>
@@ -69,6 +73,7 @@ include("config.php");
                                 <td>Pay per Month (EMI)</td>
                                 <td>&#8377;<?php echo $month ?></td>
                             </tr>
+                            <?php } ?>
                         </table>
                     </div>
                 </div>
