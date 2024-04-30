@@ -1,0 +1,80 @@
+.profile {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilemain {
+    height: 100%;
+    width: 70%;
+    /* background-color:antiquewhite ; */
+}
+
+.profilemainupper {
+    margin-top: 6%;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.profilemainupper img {
+    height: 80%;
+}
+
+.profileupin {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+.profilemainlower {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.profilelowerin1 {
+    width: 10%;
+    height: 100%;
+}
+
+.profilelowerin2 {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.profilelowerin2 #navbutton {
+    padding: 1%;
+    width: 15%;
+}
+
+#profilebutton {
+    border-radius: 20px;
+    border: 1px solid white;
+    font-size: 78%;
+    padding: 1%;
+    font-weight: bold;
+    background-color: #29524a;
+    color: white;
+    transition: all ease-in-out 0.6s;
+}
+
+#profilebutton:hover {
+    transition: all ease-in-out 0.6s;
+    background-color: black;
+}

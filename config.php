@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","realestatephp");
+$con = mysqli_connect("localhost","root","","propertypulse");
 	if (mysqli_connect_errno())
 	{
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();

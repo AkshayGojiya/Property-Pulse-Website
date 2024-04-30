@@ -1,0 +1,108 @@
+.aboutmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.aboutmainin {
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    width: 70%;
+}
+
+.aboutupper {
+    height: 15%;
+    width: 100%;
+    align-items: center;
+}
+
+.aboutlower {
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+
+.aboutlowerone {
+    width: 65%;
+    height: 100%;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.aboutlowertwo {
+    line-height: 1.8;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#aboutuppertext {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.aboutlineone {
+    height: 3px;
+    width: 15%;
+    background-color: #29524a;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.aboutlinetwo {
+    height: 3px;
+    width: 8%;
+    background-color: #29524a;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+#aboutlowerpara {
+    width: 100%;
+    padding-top: 7px;
+    line-height: 1.76;
+}
+
+#aboutimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all ease-in-out 0.2s;
+    box-sizing: border-box;
+    z-index: -1;
+    filter: grayscale(30%);
+}
+
+#aboutimg:hover {
+    transform: scale(1.02);
+    transition: all ease-in-out 0.2s;
+    filter: grayscale(0%);
+}
+
+.imgdiv {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 0 100px 0 100px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: all ease-in-out 0.3s;
+}
+
+
+.imgdiv:hover {
+    transform: scale(1.02);
+    transition: all ease-in-out 0.3s;
+}

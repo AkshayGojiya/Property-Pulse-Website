@@ -1,0 +1,270 @@
+.prop {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propmain {
+    padding-top: 4%;
+    margin-bottom: 4%;
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+
+.propmain1 {
+    margin-top: 2%;
+    width: 66.6666667%;
+    height: auto;
+    display: grid;
+    column-gap: 3%;
+    row-gap: 3%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.propmain2 {
+    width: 33.3333333%;
+    height: auto;
+}
+
+.propin2in1 {
+    height: 40vh;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1%;
+    overflow: hidden;
+  }
+  
+  .propin2in1:hover .home3in2in1img{
+    background-size: 110%;
+    background-position: center;
+    transition: all 250ms ease-in-out 0s;
+    background-repeat: no-repeat;
+  }
+  
+  .propin2in1img {
+    height: 55%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 250ms ease-in-out 0s;
+  }
+  
+  .propin2in1imgup {
+    height: 40%;
+    width: 100%;
+  }
+  
+  .propin2in1imgdown {
+    height: 30%;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.4;
+    text-align: left;
+  }
+  
+  #propimagepara {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .propin2in1text {
+    height: 45%;
+    width: 100%;
+  }
+  
+  .propin2in1text1 {
+    height: 50%;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    padding-left: 17px;
+    line-height: 2;
+    text-align: left;
+  }
+  
+  #propdownpara1 {
+    font-size: 16px;
+    font-weight:lighter;
+  }
+  
+  .propin2in1text3 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .proploverlover1 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .proploverlover2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .propsecondin1 {
+    padding-top: 25px;
+    display: inline-block;
+    text-align: left;
+    align-items: left ;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.3;
+    height: 37px;
+    margin-left: 5%;
+  }
+  
+  .proplineonefor2 {
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 3px;
+    width: 25%;
+    background-color: #29524a;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  
+  .proplinetwofor2 {
+    margin-left: 5%;
+    height: 3px;
+    width: 14%;
+    background-color: #29524a;
+    margin-top: 8px;
+    border-radius: 20px;
+  }
+
+  .propmain2insecond1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .propformforinstalment {
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+  }
+
+  .propformforinstalment input {
+    width: 80%;
+    font-size: 15px;
+    border-radius: 0 6px 6px 0;
+    padding: 12px;
+    margin: 2%;
+    margin-left: 0;
+    margin-right: 5%;
+    border: 2px solid #e4e0df;
+  }
+
+  .propformforinstalment button {
+    width: 34%;
+    padding: 15px;
+    border-radius: 6px;
+    border: 0.1px solid #e4e0df;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #29524a;
+    color: white;
+    margin-top: 4%;
+    margin-left: 5%;
+    transition: all ease-in-out 0.6s;
+    cursor: pointer;
+  }
+
+  .propformforinstalment button:hover {
+    transition: all ease-in-out 0.6s;
+    background-color: black;
+  }
+
+.propfeaturedprop {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+  .propfeaturedpropinner {
+    margin-bottom: 1%;
+    width: 90%;
+    height: auto;
+    margin: 2%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .propfeaturedpropinner img {
+    height: 90%;
+    width: 25%;
+    object-fit: cover;
+    border-radius: 2%;
+  }
+
+  .propfeaturedinnertext {
+    height: 50%;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    padding-left: 17px;
+    line-height: 1.8;
+    text-align: left;
+  }
+  
+  #propfeaturedinnerpara {
+    font-size: 16px;
+    font-weight:lighter;
+  }
+
+  .proprecentlyaddedprop {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .propforminput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .propforminput i {
+    width: 3%;
+    font-size: 15px;
+    border-radius: 6px 0 0 6px;
+    padding: 12px;
+    padding-left: 15px;
+    margin: 2%;
+    margin-left: 5%;
+    margin-right: 0;
+    border: 3px solid #e4e0df;
+    background-color: #e4e0df;
+  }

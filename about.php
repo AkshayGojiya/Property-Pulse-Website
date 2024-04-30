@@ -12,7 +12,7 @@ include("config.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Pulse | Let Us Guide You Home</title>
     <link rel="icon" type="image/x-icon" href="Images/android-chrome-512x512.png">
-    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="CSS/about.css">
 </head>
 <body>
     <header>

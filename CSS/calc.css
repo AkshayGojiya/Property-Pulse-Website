@@ -59,6 +59,12 @@
     justify-content: center;
   }
 
+ #userlistednot {
+  height: 500px;
+  width: 100%;
+  text-align: center;
+ }
+
   .calcmaininner2 table {
     width: 53%;
     font-size: 18px;

@@ -42,7 +42,7 @@ if(isset($_REQUEST['login']))
 	<header>
 		<?php require("header.php")?>
 	</header>
-	<section></section>
+	<section>
     <div class="login-page">
         <div class="form" >
             <form class="login-form" method="post">

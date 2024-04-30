@@ -11,7 +11,7 @@ include("config.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Pulse | Let Us Guide You Home</title>
-    <link rel="stylesheet" type="text/css" href="properties.css">
+    <link rel="stylesheet" type="text/css" href="CSS/properties.css">
     <link rel="icon" type="image/x-icon" href="Images/android-chrome-512x512.png">
 </head>
 <body>
@@ -40,7 +40,7 @@ include("config.php");
                         {
                     ?>
                     <div class="propin2in1">
-                        <div class="propin2in1img">
+                        <div class="propin2in1img" style="background-image: url('Images/<?php echo $row['pimage'];?>')">
                             <div class="propin2in1imgup"></div>
                             <div class="propin2in1imgdown">
                                 &#8377;<?php echo $row['13'];?>
@@ -105,17 +105,24 @@ include("config.php");
                             <div class="proplinetwofor2"></div>
                             <?php 
                                     $query=mysqli_query($con,"SELECT * FROM `property` WHERE isFeatured = 1 ORDER BY date DESC LIMIT 3");
+                                    $count = 0;
                                     while($row=mysqli_fetch_array($query))
                                     {
+                                        $count++;
                             ?>
                             <div class="propfeaturedpropinner">
-                                <img src="Images/login.jpeg" alt="prop">
+                                <img src="Images/<?php echo $row['18'];?>" alt="prop">
                                 <div class="propfeaturedinnertext">
                                     <?php echo $row['1'];?>
                                 <p id="propfeaturedinnerpara" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;<?php echo $row['14'];?></p>
                                 </div>                              
                             </div>
-                            <?php } ?>
+                            <?php 
+                            if($count == 1){
+                                break;
+                            }
+                        
+                        } ?>
                         </div>
                         <div class="proprecentlyaddedprop">
                             <div class="propsecondin1"> 
@@ -125,17 +132,23 @@ include("config.php");
                             <div class="proplinetwofor2"></div>
                             <?php 
 								$query=mysqli_query($con,"SELECT * FROM `property` ORDER BY date DESC LIMIT 6");
+                                $count = 0;
                                     while($row=mysqli_fetch_array($query))
                                     {
+                                        $count++;
 								?>
                             <div class="propfeaturedpropinner">
-                                <img src="Images/login.jpeg" alt="prop">
+                                <img src="Images/<?php echo $row['18'];?>" alt="prop">
                                 <div class="propfeaturedinnertext">
                                     <?php echo $row['1'];?>
                                 <p id="propfeaturedinnerpara" ><i class="fa-solid fa-location-dot locationfooter"></i>&nbsp;<?php echo $row['14'];?></p>
                                 </div>                              
                             </div>
-                            <?php } ?>
+                            <?php 
+                            if($count == 1){
+                                break;
+                            }
+                        } ?>
                         </div>
                     </div>
                     

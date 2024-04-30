@@ -2,7 +2,6 @@
 include("config.php");
 $aid = $_GET['id'];
 
-// view code//
 $sql = "SELECT * FROM about where id='$aid'";
 $result = mysqli_query($con, $sql);
 while($row = mysqli_fetch_array($result))
@@ -11,7 +10,6 @@ while($row = mysqli_fetch_array($result))
 	}
 @unlink('upload/'.$img);
 
-//end view code
 
 
 $msg="";

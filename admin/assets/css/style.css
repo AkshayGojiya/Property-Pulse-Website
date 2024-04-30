@@ -1,51 +1,10 @@
-/*
-Author       : Dreamguys
-Template Name: Ventura - Bootstrap Admin Template
-Version      : 1.0
-*/
-
-/*============================
- [Table of CSS]
-
-1. General
-2. Table
-3. Helper Class
-4. Bootstrap Classes
-5. Select2
-6. Nav Tabs
-7. Components
-8. Header
-9. Sidebar
-10. Content
-11. Login
-12. Lock Screen
-13. Notifications
-14. Dashboard
-15. Invoice
-16. Calendar
-17. Inbox
-18. Mail View
-19. Error
-20. Chat
-21. Product
-22. Product Details
-23. Profile
-24. Template Options
-25. Responsive
-
-========================================*/
-
-/*-----------------
-	1. General
------------------------*/
-
 @import url("https://fonts.googleapis.com/css?family=Mada:400,500,600,700&amp;display=swap");
 
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(../fonts/MaterialIcons-Regular.eot); 
   src: local("Material Icons"), local("MaterialIcons-Regular"),
     url(../fonts/MaterialIcons-Regular.html) format("woff2"),
     url(../fonts/MaterialIcons-Regular.woff) format("woff"),
@@ -170,9 +129,6 @@ textarea.form-control {
   font-weight: 600;
 }
 
-/*-----------------
-	2. Table
------------------------*/
 
 .table {
   color: #333;
@@ -293,9 +249,7 @@ table.table td h2 span {
   white-space: nowrap;
 }
 
-/*-----------------
-	3. Helper Class
------------------------*/
+
 
 .p-20 {
   padding: 20px !important;
@@ -372,10 +326,6 @@ table.table td h2 span {
   right: 15px;
   top: 10px;
 }
-
-/*-----------------
-	4. Bootstrap Classes
------------------------*/
 
 .btn.focus,
 .btn:focus {
@@ -965,9 +915,6 @@ button.bg-danger:hover {
   color: #283447 !important;
 }
 
-/*-----------------
-	5. Select2
------------------------*/
 
 .select2-container .select2-selection--single {
   border: 1px solid #ddd;
@@ -1022,9 +969,6 @@ button.bg-danger:hover {
   min-height: 40px;
 }
 
-/*-----------------
-	6. Nav Tabs
------------------------*/
 
 .nav-tabs {
   border-bottom: 1px solid #e6e6e6;
@@ -1179,9 +1123,7 @@ button.bg-danger:hover {
   border-width: 2px 0 0 0;
 }
 
-/*-----------------
-	7. Components
------------------------*/
+
 
 .section-header {
   margin-bottom: 1.875rem;
@@ -1231,7 +1173,6 @@ button.bg-danger:hover {
   padding-right: 3px;
 }
 
-/* Avatar */
 
 .avatar {
   position: relative;
@@ -1396,9 +1337,7 @@ button.bg-danger:hover {
   z-index: 1;
 }
 
-/*-----------------
-	8. Header
------------------------*/
+
 
 .header {
   background: #29524a;
@@ -1628,7 +1567,6 @@ html.menu-opened body {
   overflow: hidden;
 }
 
-/* Search */
 
 .top-nav-search {
   float: left;
@@ -1678,9 +1616,6 @@ html.menu-opened body {
   position: absolute;
 }
 
-/*-----------------
-	9. Sidebar
------------------------*/
 
 .sidebar {
   background-color: #3a4352;
@@ -1866,9 +1801,9 @@ html.menu-opened body {
   color: #fff;
 }
 
-/*-----------------
-	10. Content
------------------------*/
+
+
+
 
 .main-wrapper {
   width: 100%;
@@ -1908,9 +1843,8 @@ html.menu-opened body {
   margin-bottom: 5px;
 }
 
-/*-----------------
-	11. Login
------------------------*/
+
+
 
 .login-body {
   display: table;
@@ -2038,9 +1972,8 @@ html.menu-opened body {
   width: 42px;
 }
 
-/*-----------------
-	12. Lock Screen
------------------------*/
+
+
 
 .lock-user {
   margin-bottom: 20px;
@@ -2051,9 +1984,9 @@ html.menu-opened body {
   width: 100px;
 }
 
-/*-----------------
-	13. Notifications
------------------------*/
+
+
+
 
 .notifications {
   padding: 0;
@@ -2173,9 +2106,7 @@ html.menu-opened body {
   margin: 0;
 }
 
-/*-----------------
-	14. Dashboard
------------------------*/
+
 
 .dash-widget-icon {
   align-items: center;
@@ -2251,9 +2182,7 @@ html.menu-opened body {
   font-weight: 600;
 }
 
-/*-----------------
-	15. Invoice
------------------------*/
+
 
 .add-btn {
   border: 1px solid transparent;
@@ -2316,9 +2245,7 @@ html.menu-opened body {
   width: auto;
 }
 
-/*-----------------
-	16. Calendar
------------------------*/
+
 
 .calendar-events {
   border: 1px solid transparent;
@@ -2451,9 +2378,7 @@ html.menu-opened body {
   padding: 10px 20px;
 }
 
-/*-----------------
-	17. Inbox
------------------------*/
+
 
 .dropdown-action {
   margin-bottom: 5px;
@@ -2542,9 +2467,7 @@ table.table-inbox tbody tr.checked {
   margin-right: 5px;
 }
 
-/*-----------------
-	18. Mail View
------------------------*/
+
 
 .attachments {
   list-style: none;
@@ -2655,9 +2578,6 @@ table.table-inbox tbody tr.checked {
   padding: 8px 15px;
 }
 
-/*-----------------
-	19. Error
------------------------*/
 
 .error-page {
   align-items: center;
@@ -2694,9 +2614,7 @@ table.table-inbox tbody tr.checked {
   padding: 10px 20px;
 }
 
-/*-----------------
-	20. Chat
------------------------*/
+
 
 .chat-window {
   border: 1px solid #e0e3e4;
@@ -3394,9 +3312,7 @@ table.table-inbox tbody tr.checked {
   width: 100%;
 }
 
-/*-----------------
-	21. Product
------------------------*/
+
 
 .product {
   -moz-transition: all 0.5s;
@@ -3487,9 +3403,6 @@ table.table-inbox tbody tr.checked {
   display: block;
 }
 
-/*-----------------
-	22. Product Details
------------------------*/
 
 .product-content {
   position: relative;
@@ -3605,9 +3518,7 @@ table.table-inbox tbody tr.checked {
   margin-left: 2px;
 }
 
-/*-----------------
-	23. Profile
------------------------*/
+
 
 .profile-header {
   background: #fff;
@@ -3693,9 +3604,6 @@ table.table-inbox tbody tr.checked {
   position: relative;
 }
 
-/*-----------------
-	24. Template Options
------------------------*/
 
 .skin-settings {
   z-index: 999;
@@ -3789,9 +3697,7 @@ table.table-inbox tbody tr.checked {
   transform: translate(-50%, -50%);
 }
 
-/*-----------------
-	25. Responsive
------------------------*/
+
 
 @media only screen and (min-width: 768px) {
   .avatar-xxl {

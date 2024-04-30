@@ -33,47 +33,34 @@ if(!isset($_SESSION['uemail']))
                         <div class="calclinetwo"></div>
                     </div>
                     <div class="calcmaininner2">
-                        <table>
-                            <tr>
-                                <th width="12%">Properties</th>
-                                <th>BHK</th>
-                                <th>Type</th>
-                                <th>Added Date</th>
-                                <th>Status</th>
-                                <th>Update</th>
-                                <th>Delete</th>
-                            </tr>
+                        
                             <?php 
 							$uid=$_SESSION['uid'];
 							$query=mysqli_query($con,"SELECT * FROM `property` WHERE uid='$uid'");
+                            if($row=mysqli_fetch_array($query) == 0){
+                                $noprop = "<h1 id='userlistednot'>NO PROPERTIES LISTED</h1>";
+                                echo $noprop;
+                            }
+                            else {
+                                $table = "<table>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>BHK</th>
+                                    <th>Added Date</th>
+                                    <th>Status</th>
+                                </tr>";
+                                echo $table;
 								while($row=mysqli_fetch_array($query))
 								{
 							?>
                             <tr>
-                                <td>Amount</td>
-                                <td>&#8377;<?php echo $propprice ?></td>
+                                <td>For <?php echo $row['5'];?></td>
+                                <td><?php echo $row['4'];?></td>
+                                <td><?php echo $row['date'];?></td>
+                                <td><?php echo $row['status'];?></td>
                             </tr>
-                            <tr>
-                                <td>Total Duration</td>
-                                <td><?php echo $propduration ?> Months</td>
-                            </tr>
-                            <tr>
-                                <td>Interest Rate</td>
-                                <td><?php echo $propint ?>%</td>
-                            </tr>
-                            <tr>
-                                <td>Total Interest</td>
-                                <td>&#8377;<?php echo $interest ?></td>
-                            </tr>
-                            <tr>
-                                <td>Total Amount</td>
-                                <td>&#8377;<?php echo $pay ?></td>
-                            </tr>
-                            <tr>
-                                <td>Pay per Month (EMI)</td>
-                                <td>&#8377;<?php echo $month ?></td>
-                            </tr>
-                            <?php } ?>
+                            
+                            <?php }} ?>
                         </table>
                     </div>
                 </div>

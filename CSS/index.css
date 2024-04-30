@@ -13,6 +13,7 @@ html {
   bottom: 2rem;
   right: 2rem;
   z-index: 1000;
+
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -63,6 +64,7 @@ html {
   height: 100%;
   width: 70%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -85,57 +87,64 @@ html {
 }
 
 .home1in2 {
+  margin-top: 2%;
   height: 70px;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home1in2 form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .home1in2 select {
-  padding: 15px 35px 15px 12px;
+  padding: 1%;
+  width: 15%;
   font-size: 15px;
   border-radius: 4px;
   border: 2px solid #e4e0df;
-  margin: 0 36px 0 0;
   background-color: white;
   cursor: pointer;
 }
 
 #indexformtstatus {
-  padding: 15px 35px 15px 12px;
   font-size: 15px;
   border-radius: 4px;
   border: 2px solid #e4e0df;
-  margin: 0 36px;
 }
 
 .home1in2 input {
-  width: 600px;
-  padding: 15px 15px 15px 12px;
   font-size: 15px;
+  padding: 1%;
+  width: 38%;
   border-radius: 4px;
   border: 2px solid #e4e0df;
-  margin: 0 36px;
-  cursor:alias;
 } 
 
 .home1in2 button {
-  padding: 2px 25px;
+  width: 13%;
+  padding: 1%;
   font-size: 15px;
   border: 0;
   border-radius: 4px;
-  line-height: 46px;
   font-weight: 500;
+  border: 2px solid #29524a;
   transition: all ease-in-out 0.6s;
   background-color: #29524a;
   color: white;
-  margin: 0 0 0 36px;
   cursor: pointer;
 }
 
 .home1in2 button:hover {
   transition: all ease-in-out 0.6s;
   background-color: black;
+  border: 2px solid black;
 }
 
 .homemain2 {
@@ -281,24 +290,25 @@ html {
 }
 
 .home3in2in1 {
-  height: 95%;
-  width: 29%;
+  height: 90%;
+  width: 23%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1%;
   overflow: hidden;
+  position: relative;
 }
 
-.home3in2in1:hover .home3in2in1img{
-  background-size: 110%;
+/* .home3in2in1:hover .home3in2in1img{
+  background-size: 130%; 
+  transform: scale(1.03);
   background-position: center;
   transition: all 250ms ease-in-out 0s;
   background-repeat: no-repeat;
-}
+} */
 
 .home3in2in1img {
   height: 48%;
   width: 100%;
-  background-image: url(house.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -489,7 +499,6 @@ html {
   height: 20%;
   display: flex;
   font-size: 28px;
-  color: white;
   align-items: center;
   padding-top: 2%;
 }
@@ -499,7 +508,6 @@ html {
   height: 20%;
   display: flex;
   font-size: 28px;
-  color: white;
   align-items: center;
   justify-content: space-between;
 }
@@ -509,7 +517,6 @@ html {
   height: 20%;
   display: flex;
   font-size: 28px;
-  color: white;
   align-items: center;
   justify-content: space-between;
 }
@@ -519,7 +526,6 @@ html {
   height: 20%;
   display: flex;
   font-size: 28px;
-  color: white;
   align-items: center;
   justify-content: space-between;
 }
@@ -594,9 +600,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(index-4.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .homemain6in {
@@ -640,7 +643,7 @@ html {
 
 
 .homemain7 {
-  height: 700px;
+  height: 500px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -670,7 +673,7 @@ html {
 
 .home7inin {
   margin-top: 3%;
-  height: 75%;
+  height: 45%;
   width: 100%;
   text-align: center;
   display: flex;
@@ -680,28 +683,43 @@ html {
 
 }
 
+
+
+
+.home7innerimg:hover {
+  transition: all 300ms ease-in-out 0s;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home7innerimg{
+  height: 70%;
+  width: 20%;
+  background-color: #e4e0df;
+  transition: all 300ms ease-in-out 0s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 4px;
+
+}
 .home7innerimg {
   color: black;
   height: 100%;
-  width: 24%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #e4e0df;
-  background-image: url(digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg);
+  /* border: 2px solid #29524a; */
+  /* background-color: #e4e0df; */
+  /* background-image: url(digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg); */
   background-position: center;
   background-size: cover;
-  border-radius: 1%;
+  /* border-radius: 3%; */
   transition: background 0.3s ease-in-out;
   font-size: 20px;
-}
-
-.home7innerimg:hover {
-  background-size: 263%;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: background 0.3s ease-in-out;
 }
 
 #home7innertext1 {

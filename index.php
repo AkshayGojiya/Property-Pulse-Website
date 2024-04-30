@@ -87,13 +87,15 @@ include("config.php");
                     <div class="homelinetwo"></div>
                     <div class="home3in2">
                     <?php $query=mysqli_query($con,"SELECT property.*, user.uname,user.utype,user.uimage FROM `property`,`user` WHERE property.uid=user.uid ORDER BY date DESC LIMIT 9");
+                    $count=0;
                         while($row=mysqli_fetch_array($query))
                         {
+                            $count++;
                     ?>
                         <div class="home3in2in1">
-                            <div class="home3in2in1img">
+                            <div class="home3in2in1img" style="background-image: url('Images/<?php echo $row['18'];?>')">
                                 <div class="home3in2in1imgup"></div>
-                                <div class="home3in2in1imgdown">
+                                <div class="home3in2in1imgdown" style="background-color: rgba(0, 0, 0, 0.5)">
                                     &#8377;<?php echo $row['13'];?>
                                     <p id="home3imagepara" ><?php echo $row['12'];?> sqft</p>
                                 </div>
@@ -131,23 +133,27 @@ include("config.php");
                                 </div>
                             </div>
                         </div>
-                        <?php } ?>
+                        <?php 
+                        if($count == 4){
+                            break;
+                        }
+                    } ?>
                     </div>
                 </div>
             </div>
 
             <div class="homemain4">
-                <div class="homemain4in">
-                    <div class="home4inin">
+                <div class="homemain4in" >
+                    <div class="home4inin" >
                         <div class="home4inner1">
-                            <h3>Why Choose Us</h3>
+                            <h3 style="color:black">Why Choose Us</h3>
                         </div>
                         <div class="home4inner2">
                             <div class="home4innerin1">
                                 <img src="Images/badge.png" alt="Top Rated">
                             </div>
                             <div class="home4innerin2">
-                                <h5>Top Rated</h5>
+                                <h5 style="color:black">Top Rated</h5>
                                 <p></p>
                             </div>
                         </div>
@@ -156,7 +162,7 @@ include("config.php");
                                 <img src="Images/home-security.png" alt="Experience Quality">
                             </div>
                             <div class="home4innerin2">
-                                <h5>Experience Quality</h5>
+                                <h5 style="color:black">Experience Quality</h5>
                                 <p></p>
                             </div>
                         </div>
@@ -165,7 +171,7 @@ include("config.php");
                                 <img src="Images/agent-2.png" alt="Experienced Agents" id="agent-2">
                             </div>
                             <div class="home4innerin2">
-                                <h5>Experienced Agents</h5>
+                                <h5 style="color:black">Experienced Agents</h5>
                                 <p></p>
                             </div>
                         </div>
@@ -173,15 +179,7 @@ include("config.php");
                 </div>
             </div>
 
-            <!-- <div class="homemain5">
-                <div class="homemain5in">
-                    <div class="home5in1">
-                        How It Work
-                    </div>
-                    <div class="homelineone"></div>
-                    <div class="homelinetwo"></div>
-                </div>
-            </div> -->
+            
 
             <div class="homemain7">
                 <div class="homemain7in">
@@ -192,24 +190,36 @@ include("config.php");
                     <div class="homelinetwo"></div>
                     <div class="home7inin">
                     <?php
-                        $query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Olisphis'");
+                        $query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Anand'");
                         while($row=mysqli_fetch_array($query))
                         {
                             ?>
-                        <div class="home7innerimg">
-                            <a href="stateproperty.php?id=<?php echo $row['17']?>"><h3 id="home7innertext1"><?php echo $row['state'];?></h3></a>
+                        <div class="home7innerimg" >
+                            <a href="#"><h3 id="home7innertext1"><?php echo $row['state'];?></h3></a>
                             <h5><?php 
                                         $total = $row[0];
                                         echo $total;?> Properties Listed</h5>
                         </div>
                         <?php } ?>
                         <?php
-                        $query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Floson'");
+                        $query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Mumbai'");
                         while($row=mysqli_fetch_array($query))
                         {
                             ?>
                         <div class="home7innerimg">
-                            <a href="stateproperty.php?id=<?php echo $row['17']?>"><h3 id="home7innertext1"><?php echo $row['state'];?></h3></a>
+                            <a href="#"><h3 id="home7innertext1"><?php echo $row['state'];?></h3></a>
+                            <h5><?php 
+                                        $total = $row[0];
+                                        echo $total;?> Properties Listed</h5>
+                        </div>
+                        <?php } ?>
+                        <?php
+                        $query=mysqli_query($con,"SELECT count(state), property.* FROM property where city='Delhi'");
+                        while($row=mysqli_fetch_array($query))
+                        {
+                            ?>
+                        <div class="home7innerimg">
+                            <a href="#"><h3 id="home7innertext1"><?php echo $row['state'];?></h3></a>
                             <h5><?php 
                                         $total = $row[0];
                                         echo $total;?> Properties Listed</h5>
@@ -220,7 +230,7 @@ include("config.php");
             </div>
 
 
-            <div class="homemain6">
+            <div class="homemain6" style="background-image: none">
             <?php
                 $query=mysqli_query($con,"SELECT count(pid) FROM property");
                     while($row=mysqli_fetch_array($query))
@@ -267,7 +277,7 @@ include("config.php");
                                 {
                         ?>
                     <div class="home6inner">
-                        <img src="Images/home-security.png" alt="property">
+                        <img src="Images/agent.png" alt="property">
                         <h4><?php 
                             $total = $row[0];
                             echo $total;?></h4>
@@ -281,7 +291,7 @@ include("config.php");
 
 
 
-            <div class="homemain8">
+            <!-- <div class="homemain8">
                 <div class="homemain8in">
                     <div class="home8in1"> 
                         Testimonial
@@ -289,7 +299,7 @@ include("config.php");
                     <div class="homelineonefor8"></div>
                     <div class="homelinetwofor8"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <a href="#" class="backtotop" id="scroller">
             <span >

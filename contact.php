@@ -1,4 +1,7 @@
 <?php 
+ini_set('session.cache_limiter','public');
+session_cache_limiter(false);
+session_start();
 include("config.php");
 $error="";
 $msg="";
@@ -32,7 +35,7 @@ if(isset($_POST['send']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Pulse | Let Us Guide You Home</title>
-    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
     <link rel="icon" type="image/x-icon" href="Images/android-chrome-512x512.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
